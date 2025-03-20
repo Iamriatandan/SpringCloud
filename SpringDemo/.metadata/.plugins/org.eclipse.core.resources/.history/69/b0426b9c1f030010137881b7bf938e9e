@@ -1,0 +1,11 @@
+package com.tandan.SpringDemo;
+
+public class Alien {
+	//creating constructor
+	public Alien() {
+		System.out.println("Hello this is constructor of alien class");
+	}
+public void show() {
+	System.out.println("Hello I am alien");
+}
+}

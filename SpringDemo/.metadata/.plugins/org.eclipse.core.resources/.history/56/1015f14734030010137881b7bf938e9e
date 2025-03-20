@@ -1,0 +1,8 @@
+package com.tandan.SpringDemo;
+
+public class Laptop {
+
+	public void compile() {
+		System.out.println("Code in laptop is compiling");
+	}
+}

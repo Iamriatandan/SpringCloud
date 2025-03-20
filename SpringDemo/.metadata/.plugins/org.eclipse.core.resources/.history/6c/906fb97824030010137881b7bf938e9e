@@ -1,0 +1,25 @@
+package com.tandan.SpringDemo;
+
+public class Alien {
+	//creating variables
+	 private int age;
+	//generated getters and setters
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	//creating constructor
+	public Alien() {
+		System.out.println("Hello this is constructor of alien class");
+	} // this still gets printed even if we are not automatically creating object and hence 
+	//any class that has variables and getters and setters is known as bean
+public void show() {
+	System.out.println("Hello I am alien");
+}
+}
+
+
+//now note that jvm has a container inside it and that is spring container
+// also this container has classes inside it and gives us object

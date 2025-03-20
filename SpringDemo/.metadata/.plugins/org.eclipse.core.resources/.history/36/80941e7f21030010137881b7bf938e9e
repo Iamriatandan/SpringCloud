@@ -1,0 +1,21 @@
+package com.tandan.SpringDemo;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class App 
+{
+    public static void main( String[] args )
+    {
+    //	BeanFactory factory = new BeanFactory(new ClassPathResource("spring.xml"));
+    ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
+     Alien obj =(Alien)factory.getBean("alien");
+     obj.show();
+     obj.age =13; // gives 13 because for this object we have initialized it
+     System.out.println(obj.age);
+     
+     Alien obj2 = (Alien)factory.getBean("alien");
+     System.out.println(obj.age); // shows 13 because we have created 1 object in jvm and two references  are referencing it
+    }
+}
+
+//we call objects as singleton beans as only 1 object is being created and many will be referencing from it.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="alien" class="com.tandan.SpringDemo.Alien" scope="prototype">
+<property name="age" value="10"></property><!--for every primitive variable we need to use property
+in order to directly assign the value -->
+<property name="name" value="Ashish"></property>
+</bean>
+</beans>

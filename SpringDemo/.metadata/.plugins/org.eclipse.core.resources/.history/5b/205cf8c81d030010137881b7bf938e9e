@@ -1,0 +1,19 @@
+package com.tandan.SpringDemo;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	BeanFactory factory = new BeanFactory(new ClassPathResource("spring.xml"));
+      Alien obj =(Alien)factory.getBean("alien");
+      obj.show();
+    }
+}
