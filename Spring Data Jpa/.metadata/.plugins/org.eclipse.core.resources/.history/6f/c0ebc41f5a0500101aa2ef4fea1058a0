@@ -1,0 +1,5 @@
+package com.tandan.springbootmvc.model;
+
+public interface AlienRepo {
+
+}

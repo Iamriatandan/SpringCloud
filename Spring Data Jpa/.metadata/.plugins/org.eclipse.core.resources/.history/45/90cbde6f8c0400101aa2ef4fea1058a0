@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot JSP Page</title>
+</head>
+<body>
+    <h2>Welcome to Ria Tandan's page</h2>
+	<form action ="add">
+		Enter 1st number : <input type="text" name="number1"><br>
+		Enter 2nd number : <input type="text" name="number2"><br>
+		<input type="submit">
+	</form>
+</body>
+</html>

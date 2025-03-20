@@ -1,0 +1,30 @@
+package com.tandan.springbootmvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class HomeController
+{
+	@RequestMapping("/")
+	public String home()
+	{
+		return "index";
+	}
+	
+	@RequestMapping("add")
+	public ModelAndView add(@RequestParam("number1")int i,@RequestParam("number2") int j , HttpSession session)
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("result");
+		int number3 = i+j;
+		mv.addObject("number3",number3);
+		return mv;
+	}
+}
+ 
